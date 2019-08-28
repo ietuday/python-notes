@@ -32,3 +32,10 @@ len(names)
 
 a = [1, 1, 1, 2, 3, 4]
 a.count(1)
+
+
+lst = ['test', 'twest', 'tweast', 'treast']
+test = 'test' in lst
+print(test)
+slst = set(lst)
+print(slst)
