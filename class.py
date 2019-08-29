@@ -78,6 +78,7 @@ class D(object):
     @classmethod
     def f(cls, x):
         return cls.multiplier * x
+
     @staticmethod
     def g(name):
         print("Hello, %s" % name)
@@ -91,3 +92,45 @@ D.g
 # <function D.g at ...>
 D.g("world")
 # Hello, world
+
+
+# class Country(object):
+#     def __init__(self):
+#         self.cities = []
+
+#     def addCity(self, addCity):
+#         self.cities.append(city)
+
+
+# class City(object):
+#     def __init__(self, numPeople):
+#         self.people = []
+#         self.numPeople = numPeople
+
+#     def addPerson(self, person):
+#         self.people.append(person)
+
+#     def join_country(self, country):
+#         self.country = country
+#         country.addCity(self)
+
+#         for i in range(self.numPeople):
+#             person(i).join_city(self)
+
+
+# class Person(object):
+#     def __init__(self, ID):
+#         self.ID = ID
+
+#     def join_city(self, city):
+#         self.city = city
+#         city.addPerson(self)
+
+#     def people_in_my_country(self):
+#         x = sum([len(c.people) for c in self.city.country.cities])
+#         return x
+
+print([m for m in dir(list) if not m.startswith('__')])
+
+# Output
+# ['append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
