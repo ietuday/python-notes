@@ -1,0 +1,17 @@
+<p><strong>Print Formatting FAQS</strong></p><p><strong class="redactor-inline-converted">1.) I imported print from the __future__ module, now print isn't working. What happened?</strong><br></p>
+
+<p>This is because once you import from the __future__ module in Python 2.7, a print statement will no longer work, and print must then use a print() function. Meaning that you must use</p>
+
+<p><strong class="redactor-inline-converted">print('Whatever you were going to print')</strong></p>
+
+<p>or if you are using some formatting:</p>
+
+<p><strong class="redactor-inline-converted">print('This is a string with an {p}'.format(p='insert'</strong><strong class="redactor-inline-converted">))</strong></p>
+
+<p>The __future__ module allows you to use Python3 functionality in a Python2 environment, but some functionality is overwritten (such as the print statement, or classic division when you import division).</p>
+
+<p>Since we are using Jupyter Notebooks, once you so the import, all cells will require the use if the print() function. You will have to restart Python or start a new notebook to regain the old functionality back.</p>
+
+<p><strong class="redactor-inline-converted">HERE IS AN AWESOME SOURCE FOR PRINT FORMATTING:</strong></p>
+
+<p><a class="external-link" href="https://pyformat.info/" rel="nofollow noreferrer" target="_blank">https://pyformat.info/</a><br></p>
