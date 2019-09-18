@@ -15,7 +15,6 @@ class Person(object):
         """
         return self.name
 
-    def rename(self, renamed):      # Regular method
         """Reassign and print the name attribute."""
         self.name = renamed
         print("Now my name is {0}".format(self.name))
