@@ -28,3 +28,7 @@ dog = {'name': "Clifford", 'hands': "paws", 'color': "red"}
 fishdog = {**fish, **dog}
 print(fishdog)
 
+d = {'k1': 100, 'k2': 200, 'k3': 300}
+print(d.keys())
+print(d.values())
+print(d.items())
