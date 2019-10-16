@@ -1,0 +1,10 @@
+# For defination of any method
+
+Press Shift + Tab in Notebook
+
+*args(arguments): return tuple
+
+Allow arbitary number(any number of argument) in a function
+
+**kwargs(key word arguments): return dictionary
+Allow arbitary number(any number of key word argument) in a function
